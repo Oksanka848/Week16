@@ -23,4 +23,4 @@ sumInput  = () => {
       }
     }
     let n1 = parseInt(document.getElementById("num").value);
-document.getElementById("result").innerHTML = (+n1 - +n2);
+document.getElementById("result").innerHTML = result;
