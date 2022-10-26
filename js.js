@@ -30,14 +30,18 @@ let result = document.getElementById("result");*/
 document.getElementById("result").innerHTML= (mas);
 
     }*/
-    let button = document.getElementById("button");
-    button.onclick = sumInput;
-    function sumInput() {
-    let mas = document.getElementById("num");
-    mas.toString().split (',');
-    console.log(mas);
+    window.onload = init;
+
+function init() {
+  let button = document.getElementById('button');
+  button.onclick = sumInput;
+}
+        sumInput = () => {
+    let mas = document.getElementById("num")[0];
+    mas = mas.toString().split (',');
     
-    mas =[0];
+    
+   
     mas.sort(function (a, b) {
       return a - b;
 });
