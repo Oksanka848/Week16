@@ -31,6 +31,6 @@
     if (isNaN(gas)) gas = value;
     if (isNaN(age)) age = value;
 */
-    total = brand + model + bodytype + mileage + gas + age;
+    var total = brand + model + bodytype + mileage + gas + age;
     document.getElementById('total').innerHTML = total;
 }
