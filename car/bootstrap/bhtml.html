@@ -63,13 +63,13 @@
                   <hr class="my-4" />
                   <h5 class="mb-4">Тип топлива</h5>
                     <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkoutForm1" />
+                    <input class="form-check-input" name="gas" id="petrol" type="checkbox" value="" id="checkoutForm1" />
                     <label class="form-check-label" for="checkoutForm1">
                       бензин
                     </label>
                   </div>
                   <div class="form-check mb-4">
-                    <input class="form-check-input" type="checkbox" value="" id="checkoutForm2" checked />
+                    <input class="form-check-input" name="gas" id="diesel" type="checkbox" value="" id="checkoutForm2" checked />
                     <label class="form-check-label" for="checkoutForm2">
                         дизельное топливо
                     </label>
@@ -77,20 +77,20 @@
                   <hr class="my-4" />
                   <h5 class="mb-4">Возраст автомобиля</h5>
                         <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm3"
+                    <input class="form-check-input" name="age" id="threetofive" type="radio" name="flexRadioDefault" id="checkoutForm3"
                       checked />
                     <label class="form-check-label" for="checkoutForm3">
                         От 3 до 5 лет
                     </label>
                   </div>
                     <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm4" />
+                    <input class="form-check-input" name="age" id="fivetoseven" type="radio" name="flexRadioDefault" id="checkoutForm4" />
                     <label class="form-check-label" for="checkoutForm4">
                         От 5 до 7 лет
                     </label>
                   </div>
                         <div class="form-check mb-4">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="checkoutForm5" />
+                    <input class="form-check-input" name="age" id="overseven" type="radio" name="flexRadioDefault" id="checkoutForm5" />
                     <label class="form-check-label" for="checkoutForm5">
                         Больше 7 лет
                     </label>
@@ -109,12 +109,8 @@
               </div>
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                    Стоимость
-                    <span></span>
-                  </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-                    <div>
+                    <div class="total">
                       <strong>Итоговая стоимость</strong>
                       <strong>
                         <p class="mb-0">(вкл.НДС)</p>
