@@ -5,11 +5,11 @@
 
  
     let button = document.getElementById('button');
-    button.onclick = total;
+    button.onclick = subtotal;
   
 
- function total() {
-  var brand , model , bodytype , mileage , gas , age , total;
+ function subtotal() {
+  var brand , model , bodytype , mileage , gas , age;
     var brand = document.getElementById ('brand').value;
     brand = parseInt(brand);
     var model = document.getElementById ('model').value;
@@ -23,14 +23,26 @@
     var age = document.querySelector('input[type=radio][name="age"]:checked').value;
     age = parseInt(age);
     
-/*
-    if (isNaN(brand)) brand = value;
-    if (isNaN(model)) model = value;
-    if (isNaN(bodytype)) bodytype = value;
-    if (isNaN(mileage)) mileage = value;
-    if (isNaN(gas)) gas = value;
-    if (isNaN(age)) age = value;
-*/
-    var total = brand + model + bodytype + mileage + gas + age;
-    document.getElementById('total').innerHTML = total;
+
+    /*if (isNaN(brand)) brand = 0;
+    if (isNaN(model)) model = 0;
+    if (isNaN(bodytype)) bodytype = 0;
+    if (isNaN(mileage)) mileage = 0;
+    if (isNaN(gas)) gas = 0;
+    if (isNaN(age)) age = 0;*/
+    /*var total='';
+for (var i=1; i<=12; i++) {
+  document.getElementById('total').innerHTML+= total;
 }
+document.getElementById('total').innerHTML+= total;*/
+
+
+let total = brand + model + bodytype + mileage + gas + age;
+if (total = 0) {
+  alert('Это обязательное поле');
+}
+else {
+
+     document.getElementById ('total').innerHTML+= total + 'тысяч рублей';
+}
+ }

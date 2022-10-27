@@ -28,7 +28,10 @@ let result = document.getElementById("result");*/
           return a - b;
 });
 document.getElementById("result").innerHTML= (mas);
-
+let numbers = [4, 2, 5, 1, 3];
+numbers.sort(function(a, b) {
+  return a - b;
+});
     }*/
     window.onload = init;
 
@@ -45,5 +48,5 @@ function init() {
     mas.sort(function (a, b) {
       return a - b;
 });
-    document.getElementById("result").innerHTML= (mas);
+    document.getElementById("result").innerHTML= mas;
   }
