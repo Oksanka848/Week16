@@ -22,7 +22,7 @@
     gas = parseInt(gas);
     var age = document.querySelector('input[type=radio][name="age"]:checked').value;
     age = parseInt(age);
-    
+    var total;
 
     /*if (isNaN(brand)) brand = 0;
     if (isNaN(model)) model = 0;
