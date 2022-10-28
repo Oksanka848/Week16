@@ -5,48 +5,37 @@
     - Выводит получившийся массив в отсортированном
     по возрастанию виде
     - Подсчитывает и возвращает сумму элементов массива*/
-    /*et num = document.getElementById("num");
-    let result = document.getElementById("result");
-    let button = document.getElementById("button");
-    button.onclick = sumInput;
-let i=0;
-
-
-document.getElementById("result").innerHTML = result;
-
-let num = document.getElementById("num");
-let masnum = str.split (' ');
-let result = document.getElementById("result");*/
-    /*let button = document.getElementById("button");
-    button.onclick = sumInput;
-    function sumInput() {
-      let num = document.getElementById("num");
-      console.log(typeof num);
-      let mas = num.split (' ');
-      console.log(mas);
-      mas.sort(function (a, b) {
-          return a - b;
-});
-document.getElementById("result").innerHTML= (mas);
-let numbers = [4, 2, 5, 1, 3];
-numbers.sort(function(a, b) {
-  return a - b;
-});
+    
+/*let mas = [];
+          
+            for(i=0;i<=3;i++){
+                mas[i]=nums[i].value; // Из инпутов в массив
+            }
+            var result = {};
+    var elements = document.forms.foo.getElementsByTagName("input");
+    for(var i = 0; i < elements.length; i++)
+    {
+       /* do whatever you need to do with each input 
     }*/
-    window.onload = init;
+window.onload = init;
 
 function init() {
   let button = document.getElementById('button');
   button.onclick = sumInput;
 }
-        sumInput = () => {
-    let mas = document.getElementById("num")[0];
-    mas = mas.toString().split (',');
+let numbers = document.getElementById("numbers");
     
-    
-   
-    mas.sort(function (a, b) {
-      return a - b;
-});
-    document.getElementById("result").innerHTML= mas;
+function sumInput() {
+
+  const str = document.getElementById("numbers");
+  const chars = str.split('');
+  
+  for (var inputs of numbers) {
+    numbers.push(Number(numbers.value));
   }
+
+  return numbers;
+
+  }
+  document.getElementById("result").innerHTML= numbers;
+ 
