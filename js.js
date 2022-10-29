@@ -5,37 +5,38 @@
     - Выводит получившийся массив в отсортированном
     по возрастанию виде
     - Подсчитывает и возвращает сумму элементов массива*/
-    
+    /*var str = document.getElementById("numbers")+ ' ';
+  var arr = [str];
+  var arr = str.split(' ');
+  
+  arr.sort(function (a, b) {
+    return a - b;
+});*/
 /*let mas = [];
           
             for(i=0;i<=3;i++){
                 mas[i]=nums[i].value; // Из инпутов в массив
             }
+            arr.sort((a, b) => b - a);
             var result = {};
     var elements = document.forms.foo.getElementsByTagName("input");
     for(var i = 0; i < elements.length; i++)
     {
        /* do whatever you need to do with each input 
-    }*/
-window.onload = init;
-
-function init() {
-  let button = document.getElementById('button');
-  button.onclick = sumInput;
-}
-let numbers = document.getElementById("numbers");
+    }let number = numbers.split(' ')
+    var arr = str.split(' ');*/
+    let numbs = document.getElementById('numbers').value;
+    let sort = document.getElementById('sort');
+    //let sum  = document.getElementById('result');
+    let button = document.getElementById('button');
+    button.onclick = sumInput;
     
+    let numbers = [numbs];
+    
+
 function sumInput() {
+  numbers.sort((a, b) => b - a);
+  document.getElementById('result').innerHTML=numbers;}
 
-  const str = document.getElementById("numbers");
-  const chars = str.split('');
-  
-  for (var inputs of numbers) {
-    numbers.push(Number(numbers.value));
-  }
 
-  return numbers;
-
-  }
-  document.getElementById("result").innerHTML= numbers;
- 
+        
