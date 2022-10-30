@@ -25,13 +25,13 @@
        /* do whatever you need to do with each input 
     }let number = numbers.split(' ')
     var arr = str.split(' ');*/
-    let numbs = document.getElementById('numbers').value;
-    let sort = document.getElementById('sort');
-    //let sum  = document.getElementById('result');
-    let button = document.getElementById('button');
+    var numbs = document.getElementById('numbers').value;
+    var sort = document.getElementById('sort');
+    var sum  = document.getElementById('result');
+    var button = document.getElementById('button');
     button.onclick = sumInput;
     
-    let numbers = [numbs];
+    var numbers = [numbs];
     
 
 function sumInput() {
