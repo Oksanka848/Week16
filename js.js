@@ -9,7 +9,6 @@
     let button = document.getElementById('button');
     button.onclick = sumInput;
     let numbs = document.getElementById('numbers').value;
-    let all = document.getElementById('sort');
     let result  = document.getElementById('result');
     let numbers = [];
     
@@ -23,11 +22,13 @@
             console.log(numbers);
             let sort=numbers.sort((a, b) => a - b);
             console.log(sort);
-            all.innerHTML=sort.value;
+            let sort2 = sort.join(", ");
+            document.getElementById('sort').value=sort2;
+            
             
         }
  
         function sumInput2(total, value) {
             return total + +value;
-            document.getElementById('result').innerHTML=result;
+            document.getElementById('result').innerHTML=sumInput2(total, value);
         }
