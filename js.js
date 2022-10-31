@@ -12,9 +12,6 @@
     let result  = document.getElementById('result');
     let numbers = [];
     
-   
-
- 
         function sumInput() {
             let numbs = document.getElementById("numbers").value;
             numbers = numbs.split(',');
@@ -24,11 +21,10 @@
             console.log(sort);
             let sort2 = sort.join(", ");
             document.getElementById('sort').value=sort2;
-            
-            
-        }
+            document.getElementById('result').value=result;
+
+                    }
  
         function sumInput2(total, value) {
             return total + +value;
-            document.getElementById('result').innerHTML=sumInput2(total, value);
-        }
+                   }
